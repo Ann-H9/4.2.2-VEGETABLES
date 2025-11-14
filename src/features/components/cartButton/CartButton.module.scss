@@ -1,0 +1,148 @@
+.cartButton {
+  position: relative;
+  width: 144px;
+  height: 44px;
+  margin: 7px 12px;
+  background-image: url('../../../shared/assets/icons/button.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+  
+  &:active {
+    transform: scale(0.98);
+  }
+
+ 
+  &__quantity {
+    position: absolute;
+    left: 10px;
+    bottom: 12px;
+    width: 20px;
+    height: 20px;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+ 
+}
+
+
+.modal {
+  position: fixed;
+  top: 71px;
+  left: 976px;
+  background: white;
+  width: 444px;
+  height: 268px;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0px 2px 8px 0px rgba(33, 37, 41, 0.08);
+  z-index: 1000;
+  margin: 0;
+  overflow: auto;
+  
+}
+
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+}
+
+.popup {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.cartContent {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.cartItemImage {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.cartItemInfo {
+  flex-grow: 1;
+}
+
+.cartItemTitle {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.cartItemPrice {
+  color: #666;
+}
+
+.cartControls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cartTotal {
+  margin-top: auto;
+  padding-top: 16px;
+  font-weight: 600;
+  text-align: right;
+  border-top: 1px solid #f0f0f0;
+}
+
+.cartEmpty {
+background: url('../../../shared/assets/icons/cart_empty.svg') no-repeat center  30%;
+background-color: white;
+width: 301px;
+height: 226.71011352539062px;
+top: 71px;
+left: 1119px;
+border-radius: 16px;
+padding: 24px;
+gap: 24px;
+opacity: 1;
+overflow: hidden;
+
+&__text {
+position: relative;
+top: 60%;
+left: 30%;
+color: #868E96;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+}
+}

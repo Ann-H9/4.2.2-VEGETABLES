@@ -1,0 +1,45 @@
+@use "../../../shared/assets/styles/theme.scss" as *;
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 302px;
+    height: 414px;
+    border-radius: 24px;
+    background-color: $white;
+   
+}
+.img {
+    width: 276px;
+    height: 276px;
+    border-radius: 8px;
+    
+}
+.flex, .flex2 {
+    width: 270px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 18px;
+    margin-top: 12px;
+    font-weight: 600;
+    align-items: center;
+  
+}
+.flex2 {
+    height: 44px;
+    font-size: 20px;
+   
+    
+   
+}
+.productName {
+  font-weight: bold; 
+}
+
+.weight {
+  color: gray; 
+  font-weight: normal;
+  margin-left: 4px;
+}

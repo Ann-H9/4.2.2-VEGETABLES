@@ -1,0 +1,19 @@
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 0.6fr);
+  gap: 50px;
+  margin: 149px 80px auto 80px
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 40px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  padding: 40px;
+}

@@ -1,0 +1,22 @@
+.button, .button2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  background-image: url('./../../../shared/assets/icons/minus-button.svg');
+  cursor: pointer;
+}
+.button2 {
+     background-image: url('./../../../shared/assets/icons/plus-button.svg');
+}
+
+.counter {
+  width: 30px;
+  height: 30px;
+  text-align:center;
+  line-height: 32px;
+  
+}
+.flex {
+  display: flex;
+}
